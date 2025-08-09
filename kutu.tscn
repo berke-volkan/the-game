@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwcappbss6a4x"]
+
+[ext_resource type="Script" uid="uid://d0o84c7akqqnc" path="res://kutu.gd" id="1_qfh6q"]
+
+[node name="Kutu" type="Area2D"]
+visible = false
+script = ExtResource("1_qfh6q")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "aaaaaa"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdch4bwt3ioe3"]
+
+[ext_resource type="Texture2D" uid="uid://dx2tl5531vgjq" path="res://vazo.png" id="1_5x0pf"]
+[ext_resource type="Script" uid="uid://d2qfq5d2m2s0p" path="res://vaz.gd" id="1_x4chd"]
+[ext_resource type="FontFile" uid="uid://fp76fjl20a88" path="res://PixelOperator8.ttf" id="3_37nmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4chd"]
+size = Vector2(8, 15)
+
+[node name="Vaz" type="Area2D"]
+script = ExtResource("1_x4chd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_x4chd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5x0pf")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -5.0
+offset_top = -30.0
+offset_right = 88.0
+offset_bottom = -7.0
+theme_override_fonts/font = ExtResource("3_37nmm")
+text = "E"

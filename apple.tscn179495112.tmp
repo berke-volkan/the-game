@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgfhtdw5xsxx5"]
+
+[ext_resource type="Script" uid="uid://bcnc54rmrt6ut" path="res://apple.gd" id="1_whgpf"]
+[ext_resource type="Texture2D" uid="uid://dx2tl5531vgjq" path="res://vazo.png" id="2_xniv1"]
+[ext_resource type="FontFile" uid="uid://fp76fjl20a88" path="res://PixelOperator8.ttf" id="3_aq6lu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpjo0"]
+size = Vector2(8, 14)
+
+[node name="vazo" type="Area2D"]
+script = ExtResource("1_whgpf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+physics_interpolation_mode = 2
+scale = Vector2(10, 10)
+texture = ExtResource("2_xniv1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_lpjo0")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_aq6lu")
+theme_override_font_sizes/font_size = 10
+text = "E"

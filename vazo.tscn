@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://be50b3on2ay5o"]
+
+[ext_resource type="Script" uid="uid://cg00rhryb4vwp" path="res://vazo.gd" id="1_h4v32"]
+[ext_resource type="Texture2D" uid="uid://dx2tl5531vgjq" path="res://vazo.png" id="2_n5qbp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atrj5"]
+size = Vector2(14, 16)
+
+[node name="Vazo" type="Area2D"]
+script = ExtResource("1_h4v32")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_atrj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n5qbp")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 13.0
+offset_top = -12.0
+offset_right = 53.0
+offset_bottom = 11.0
+text = "aaaaaaaa"
